@@ -71,9 +71,10 @@ function createNotification() {
     	id: 		1,
         title: 		"Hey you",
         message: 	"Carry on working.",
-        foreground: true,
-        date: 		notificationTime, 
-        badge: 		notification_count++
+        trigger: {in:1,unit:'second'}
+//        foreground: true,
+//        date: 		notificationTime, 
+//        badge: 		notification_count++
    	});
     
 }
